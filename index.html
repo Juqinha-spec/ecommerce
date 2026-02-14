@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>The Beatles</title>
+</head>
+<body>
+    <header id="header">
+        <nav class="container header-container">
+            <a class="header-logo" href="#">THE FAB STORE</a>
+
+            <button class="btn-mobile">
+                <img src="assets/img/icon/icon-mobile-menu.svg" alt="">
+            </button>
+
+            <div class="header-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#catalogo" class="nav-link">Coleção</a></li>
+                    <li class="nav-item"><a href="#legado" class="nav-link">Legado</a></li>
+                    <li class="nav-item"><a href="#suporte" class="nav-link">Suporte</a></li>
+                </ul>
+                <div class="header-actions">
+                    <button class="header-btn btn-login">
+                        <img class="header-icon" src="assets/img/icon/icon-login.svg" alt="Ícone do Botão de Login" aria-hidden="true">
+                        <span>Entrar</span>
+                    </button>
+                
+                    <button class="header-btn btn-cart" aria-label="Carrinho de Compras">
+                        <img class="header-icon" src="assets/img/icon/icon-cart.svg" alt="Ícone do Botão do Carrinho de Compra" aria-hidden="true">
+                        <span>Carrinho</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <main>
+                <section class="hero-section" id="home">
+                    <div data-speed="0.4" class="hero-layer--bg"></div>
+                    <picture class="hero-layer--visual">
+                        <source srcset="assets/img/hero-main-mobile.webp" media="(max-width: 1240px)">
+
+                        <img data-speed="0.8" class="hero-main-img" src="assets/img/hero-beatles.png" alt="Ilustração estilizada The Beatles">
+                    </picture>
+
+                    <div class="hero-container container">
+                        <h1 data-speed="0.6" class="hero-title">the BeaTles</h1>
+
+                        <div class="hero-body">
+                            <p class="hero-text">Design, música e história unidos em um só lugar. A coleção definitiva para quem veste o legado.</p>
+
+                            <a class="link-arrow" href="#catalogo">
+                                EXPLORAR COLEÇÃO
+                                <img class="btn-icon" src="assets/img/icon/icon-arrow.svg" alt="Ícone seta" aria-hidden="true">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="favorites-section section" id="favorito">
+                    <div class="container">
+                        <div class="favorites-header">
+                            <h2 class="section-title">OS FAVORITOS DOS FÃS</h2>
+                            <p class="section-description">Uma seleção especial dos itens mais amados pela nossa comunidade. De clássicos atemporais a novidades exclusivas.</p>
+                        </div>
+
+                        <div class="favorites-grid">
+                            <a href="#catalogo" class="fav-card fav-card-sm">
+                                <img class="fav-card-bg" src="assets/img/bg/bg-card-abbey-road.webp" alt="" aria-hidden="true">
+                                
+                                <div class="fav-card-body">
+                                    <div class="fav-card-icon">
+                                        <img src="assets/img/icon/icon-arrow.svg" alt="Ícone seta" aria-hidden="true">
+                                    </div>
+                                    
+                                    <img class="fav-card-product" src="assets/img/products/fav-longsleeve-abbey-road-blue.webp" alt="Manga Longa Abbey Road">
+                                    
+                                    <div class="fav-card-details">
+                                        <h3 class="fav-card-title">Manga Longa Abbey Road</h3>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#catalogo" class="fav-card fav-card-sm">
+                                <img class="fav-card-bg" src="assets/img/bg/bg-card-let-it-be.webp" alt="" aria-hidden="true">
+                                
+                                <div class="fav-card-body">
+                                    <div class="fav-card-icon">
+                                        <img src="assets/img/icon/icon-arrow.svg" alt="Ícone seta" aria-hidden="true">
+                                    </div>
+                                    
+                                    <img class="fav-card-product" src="assets/img/products/fav-vinyl-let-it-be.webp" alt="Disco Let It Be">
+                                    
+                                    <div class="fav-card-details">
+                                        <h3 class="fav-card-title">Disco Let It Be Remastered</h3>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a href="#catalogo" class="fav-card fav-card-lg">
+                                <img class="fav-card-bg" src="assets/img/bg/bg-card-rubber-soul-yellow-submarine.webp" alt="" aria-hidden="true">
+                                
+                                <div class="fav-card-body">
+                                    <div class="fav-card-icon">
+                                        <img src="assets/img/icon/icon-arrow.svg" alt="Ícone seta" aria-hidden="true">
+                                    </div>
+                                    
+                                    <img class="fav-card-product" src="assets/img/products/fav-rubber-soul-yellow-submarine.webp" alt="Kit Rubber Soul e Poster">
+                                    
+                                    <div class="fav-card-details">
+                                        <h3 class="fav-card-title">Disco Rubber Soul + Poster Yellow Submarine</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <a class="link-arrow" href="#catalogo">
+                            VER CATÁLOGO COMPLETO
+                            <img class="btn-icon" src="assets/img/icon/icon-arrow.svg" alt="Ícone seta" aria-hidden="true">
+                        </a>
+                    </div>
+                </section>
+
+                <section class="catalog-section section" id="catalogo">
+                    <div class="signature-images">
+                        <img src="assets/img/signature/john-sig.png" class="signature sign-john" alt="Assinatura">
+                        <img src="assets/img/signature/paul-sig.png" class="signature sign-paul" alt="Assinatura">
+                        <img src="assets/img/signature/george-sig.png" class="signature sign-george" alt="Assinatura">
+                        <img src="assets/img/signature/ringo-sig.png" class="signature sign-ringo" alt="Assinatura">
+                    </div>
+
+                    <div class="container">
+                        <div class="catalog-header">
+                            <h2 class="section-title">O UNIVERSO BEATLE</h2>
+                            <p class="section-description">Cada álbum conta uma história, cada estampa carrega uma lembrança. Navegue por uma seleção exclusiva feita para quem entende que os Beatles não foram apenas uma banda, mas uma revolução.</p>
+                        </div>
+
+                        <div class="catalog-filters">
+                            <button class="filter-btn active" data-filter="all">Todos</button>
+                            <button class="filter-btn" data-filter="vestir">Vestir</button>
+                            <button class="filter-btn" data-filter="ouvir">Ouvir</button>
+                            <button class="filter-btn" data-filter="colecionar">Colecionar</button>
+                        </div>
+
+                        <div class="catalog-grid"></div>
+                        
+                        <div class="scroll-indicator" aria-hidden="true">
+                            <div class="scroll-line"></div>
+                            <p class="scroll-text">Descubra o Legado</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="brand-reveal-section">
+                    <div class="reveal-bg"></div>
+                    <div class="reveal-mask"></div>
+
+                    <div class="narrative-container">
+                        <p class="narrative-text text-1">Quatro garotos de Liverpool...</p>
+                        <p class="narrative-text text-2">Mudaram o mundo para sempre.</p>
+                    </div>
+                </section>
+
+                <section class="legacy-section section" id="legado">
+                    <div class="container legacy-container">
+                        <h2 class="section-title legacy-title">UM ECO ATEMPORAL</h2>
+                        
+                        <div class="legacy-body">
+                            <p class="legacy-text">O que começou em Liverpool não ficou preso no passado. Tornou-se infinito. Eles transformaram um mundo em preto e branco em cores vibrantes e provaram que a música é a forma mais poderosa de revolução.</p>
+                            
+                            <p class="legacy-text">Muito mais do que nostalgia, o legado do 'Fab Four' permanece uma força viva. A mensagem de liberdade e inovação não envelheceu. Ela se tornou a base da cultura pop e define até hoje o que significa ser vanguarda. Não é apenas sobre as melodias que conhecemos de cor. É sobre a certeza de que a arte verdadeira nunca perde a sua relevância.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="community-section section" id="suporte">
+                    <div class="container">
+                        <div class="community-image">
+                            <img src="assets/img/cta-beatles.webp" alt="The Beatles" loading="lazy">
+                        </div>
+
+                        <div class="community-text">
+                            <h2 class="section-title">THE FAB STORE</h2>
+                            <p class="section-description">Nossa missão é manter essa chama acesa. Desenvolvemos peças exclusivas para quem entende a profundidade dessa história e quer expressar essa conexão. De fã para fã.</p>
+                            <a href="#" class="btn-join">
+                                Junte-se à Beatlemania
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-content">
+                        <div class="footer-links">
+                            <div class="footer-col">
+                                <h3>Explorar</h3>
+                                <ul>
+                                    <li><a href="#catalogo">Vinis & CDs</a></li>
+                                    <li><a href="#catalogo">Vestuário</a></li>
+                                    <li><a href="#catalogo">Colecionáveis</a></li>
+                                    <li><a href="#favorito">Favoritos</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-col">
+                                <h3>Ajuda</h3>
+                                <ul>
+                                    <li><a href="#">Central de Atendimento</a></li>
+                                    <li><a href="#">Trocas e Devoluções</a></li>
+                                    <li><a href="#">Prazos de Entrega</a></li>
+                                    <li><a href="#">Tabela de Medidas</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-col">
+                                <h3>Sobre</h3>
+                                <ul>
+                                    <li><a href="#">Nossa História</a></li>
+                                    <li><a href="#">Política de Privacidade</a></li>
+                                    <li><a href="#">Termos de Uso</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="newsletter-wrapper">
+                            <div class="newsletter-box">
+                                <h2 class="cta-title">ALL YOU NEED IS LOVE... <br>E UM DESCONTO EXCLUSIVO NA PRIMEIRA COMPRA!</h2>
+                                <form class="email-form">
+                                    <input 
+                                        type="email" 
+                                        placeholder="E-mail" 
+                                        class="email-input"
+                                        required
+                                    >
+                                    <button type="submit" class="btn-subscribe">Inscrever-se</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-icons">
+                        <a href="https://www.instagram.com/thebeatles/" target="_blank"><img src="assets/img/icon/icon-instagram.svg" alt="Ícone Instagram"></a>
+                        <a href="https://www.facebook.com/thebeatles/" target="_blank"><img src="assets/img/icon/icon-facebook.svg" alt="Ícone Facebook"></a>
+                        <a href="https://open.spotify.com/intl-pt/artist/3WrFJ7ztbogyGnTHbHJFl2" target="_blank"><img src="assets/img/icon/icon-spotify.svg" alt="Ícone Spotify"></a>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <p class="copyright">&copy 2026 The Fab Store. Todos os direitos reservados.</p>
+                        <p>Desenvolvido por <a class="rgsampaio" href="https://rgsampaio.github.io/portfolio/" target="_blank">Ricardo Sampaio</a>.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/split-type@0.3.3/umd/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
+    <script src="animations.js"></script>
+    <script src="main.js"></script>
+    <script src="product.js"></script>
+</body>
+</html>
