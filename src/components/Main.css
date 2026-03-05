@@ -874,6 +874,10 @@
         opacity: 0.2;
     }
 
+    .legacy-container {
+        padding-bottom: 0;
+    }
+
     .legacy-title {
         font-size: 40px;
         margin-top: 40px;
