@@ -5,7 +5,7 @@
     right: -100%;
     width: 100%;
     max-width: 450px;
-    height: 100vh;
+    height: 100dvh;
     background-color: #ffffff;
     z-index: 9999;
     box-shadow: -5px 0 10px rgba(63, 63, 63, 0.15);

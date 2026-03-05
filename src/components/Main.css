@@ -483,7 +483,6 @@
     display: flex;
     align-items: start;
     overflow: hidden;
-    padding-bottom: 10rem;
 }
 
 .legacy-section::before {
@@ -510,6 +509,7 @@
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
+    padding-bottom: 4rem;
 }
 
 .legacy-title {

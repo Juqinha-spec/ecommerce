@@ -14,7 +14,7 @@ import CheckoutModal from './components/CheckoutModal';
 gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollSmoother);
 
 //Normalização do Scroll
-ScrollTrigger.normalizeScroll(true);
+ScrollTrigger.normalizeScroll(false);
 
 function App() {
   //Gerencia o ciclo de vida da animação de forma nativa no React
