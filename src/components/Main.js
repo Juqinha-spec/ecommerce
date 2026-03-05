@@ -342,7 +342,7 @@ return (
                 <div className="community-text">
                     <h2 className="section-title">THE FAB STORE</h2>
                     <p className="section-description">Nossa missão é manter essa chama acesa. Desenvolvemos peças exclusivas para quem entende a profundidade dessa história e quer expressar essa conexão. De fã para fã.</p>
-                    <a href="#home" className="btn-join">
+                    <a href="#home" className="btn-join" onClick={(e) => handleSmoothScroll(e, '#home')}>
                         Junte-se à Beatlemania
                     </a>
                 </div>
