@@ -1,6 +1,7 @@
 @font-face {
     font-family: "Bootle";
-    src: url("./assets/fonts/Bootle.ttf");
+    src: url("./assets/fonts/Bootle.ttf") format('truetype');
+    font-display: swap;
 }
 
 :root {
