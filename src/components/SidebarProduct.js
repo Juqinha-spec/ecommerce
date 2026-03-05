@@ -19,7 +19,7 @@ export default function SidebarProduct({ item }) {
             </div>
             
             <button className="btn-remove" onClick={() => removeFromCart(item.id)}>
-                <img src={iconRemove}  />
+                <img src={iconRemove} alt="Remover item" />
             </button>
         </div>
     )
