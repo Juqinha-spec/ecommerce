@@ -1,4 +1,5 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
+import { ScrollSmoother } from 'gsap/ScrollSmoother';
 import { CartContext } from '../context/CartContext'; 
 import iconClose from '../assets/img/icon/icon-mobile-close.svg';
 import SidebarProduct from './SidebarProduct';
@@ -7,12 +8,21 @@ import './SidebarCart.css';
 export default function SidebarCart() {
     const { cartItems, cartTotal, isCartOpen, setIsCartOpen, setIsCheckoutModalOpen } = useContext(CartContext);
 
+    useEffect(() => {
+        const smoother = ScrollSmoother.get();
+        if (smoother) {
+            if (isCartOpen) {
+                // Congela o site no fundo e libera o touch nativo
+                smoother.paused(true); 
+            } else {
+                // Devolve o controle para o GSAP quando fechar
+                smoother.paused(false); 
+            }
+        }
+    }, [isCartOpen]);
+
     return (
-        <aside className={`sidebar-cart ${isCartOpen ? 'open' : ''}`}
-            //Bloqueia o GSAP de roubar o scroll do mouse no Desktop
-            onWheel={(e) => e.stopPropagation()} 
-            //Bloqueia o GSAP de roubar o scroll do mouse noMobile
-            onTouchMove={(e) => e.stopPropagation()}>
+        <aside className={`sidebar-cart ${isCartOpen ? 'open' : ''}`}>
             <div className="top">
                 <h3>Seu carrinho</h3>
                 <button onClick={() => setIsCartOpen(false)}>

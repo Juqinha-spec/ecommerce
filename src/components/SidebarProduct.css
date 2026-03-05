@@ -38,12 +38,12 @@
 
 .sidebar-product .btn-remove {
     background: none;
-    border: none;
-    color: #d9534f;
     cursor: pointer;
-    font-size: 0.8rem;
-    text-decoration: underline;
     padding: 0.5rem;
+}
+
+.sidebar-product .btn-remove:hover {
+    opacity: 0.8;
 }
 
 .empty-cart {

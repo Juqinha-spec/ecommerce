@@ -863,7 +863,7 @@
     .legacy-section {
         width: 100%;
         height: 100dvh;
-        padding-bottom: 0;
+        align-items: center;
     }
 
     .legacy-section::before {
@@ -871,6 +871,7 @@
         max-width: 100%;
         height: 100%;
         right: 10%;
+        top: 5%;
         opacity: 0.2;
     }
 
